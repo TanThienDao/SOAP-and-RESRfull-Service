@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://webstrar59.fulton.asu.edu/Page0/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://webstrar59.fulton.asu.edu/Page0/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://webstrar59.fulton.asu.edu/Page0/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NaturalHazards_InputMessage">
+    <wsdl:part name="parameters" element="tns:NaturalHazards" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NaturalHazards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NaturalHazardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewsForcusService_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewsForcusService" />
+  </wsdl:message>
+  <wsdl:message name="IService1_NewsForcusService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewsForcusServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RainFall_InputMessage">
+    <wsdl:part name="parameters" element="tns:RainFall" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RainFall_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RainFallResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AccontService_InputMessage">
+    <wsdl:part name="parameters" element="tns:AccontService" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AccontService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AccontServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoginService_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginService" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoginService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NaturalHazards">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NaturalHazards" message="tns:IService1_NaturalHazards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NaturalHazardsResponse" message="tns:IService1_NaturalHazards_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewsForcusService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/NewsForcusService" message="tns:IService1_NewsForcusService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/NewsForcusServiceResponse" message="tns:IService1_NewsForcusService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RainFall">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RainFall" message="tns:IService1_RainFall_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RainFallResponse" message="tns:IService1_RainFall_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AccontService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AccontService" message="tns:IService1_AccontService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AccontServiceResponse" message="tns:IService1_AccontService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/LoginService" message="tns:IService1_LoginService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginServiceResponse" message="tns:IService1_LoginService_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NaturalHazards">
+      <soap:operation soapAction="http://tempuri.org/IService1/NaturalHazards" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsForcusService">
+      <soap:operation soapAction="http://tempuri.org/IService1/NewsForcusService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RainFall">
+      <soap:operation soapAction="http://tempuri.org/IService1/RainFall" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccontService">
+      <soap:operation soapAction="http://tempuri.org/IService1/AccontService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginService">
+      <soap:operation soapAction="http://tempuri.org/IService1/LoginService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://webstrar59.fulton.asu.edu/Page0/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

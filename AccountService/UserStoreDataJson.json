@@ -1,0 +1,24 @@
+{
+  "UsersArray": [
+    {
+      "username": "testing ",
+      "password": "password"
+    },
+    {
+      "username": "testing 2",
+      "password": "s"
+    },
+    {
+      "username": "testing",
+      "password": "asd"
+    },
+    {
+      "username": "teastingencrypted ",
+      "password": "1/g8qRIelcDMgU1+8en8nw=="
+    },
+    {
+      "username": "tan",
+      "password": "Qvm5cOQ/H6E="
+    }
+  ]
+}
